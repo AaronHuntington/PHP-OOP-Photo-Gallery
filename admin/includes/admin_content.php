@@ -8,34 +8,67 @@
 
             <?php
 
-                // $result_set = user::find_all_users();
-                // while($row = mysqli_fetch_array($result_set)){
-                //     echo $row['username']."<br>"; 
-                // }
+                // $user = new user();
 
+                // $user->username     = "laura";
+                // $user->password     = "d_password";
+                // $user->first_name   = "Laura";
+                // $user->last_name    = "walka";
 
-                // $found_user = user::find_user_by_id(2);
-                // echo $found_user['username'];
+                // $user->create();
 
-                // $found_user = user::find_user_by_id(1);
-                // $user = user::instantation($found_user);
+                //////////////////
 
-                // echo $user->username;
-                // echo "<br>";
+                // $user = User::find_user_by_id(11);
+                // $user->last_name = "Lsss";
+                // $user->update();
 
-                // $users = user::find_all_users();
+                //////////////////
+
+                // $user = user::find_user_by_id(10);
+                // $user->delete();
+
+                //////////////////
+
+                // $user = new user;
+                // // $user = user::find_user_by_id(6);
+                // $user->username = "leon";
+                // $user->save();
+            
+                /////////////////
+                // $users = user::find_all();
 
                 // foreach($users as $user){
-                //     echo $user->last_name."<br>";
+                //     echo $user->username;
+                //     echo '<br>';
                 // }
 
-                $found_user = user::find_user_by_id(1);
-                echo $found_user->username;
+                /////////////////
 
+                // $photos = photo::find_all();
+
+                // foreach($photos as $photo){
+                //     echo $photo->size;
+                //     echo '<br>';
+                // }
+
+                /////////////////
+        
+                // $photo = new photo();
+
+                // $photo->title     = "3 title";
+                // $photo->description     = "3 description";
+                // $photo->filename   = "3 filename";
+                // $photo->type    = "3 type";
+                // $photo->size    = "333";
+
+                // $photo->create();                    
+
+                /////////////////
+
+                echo INCLUDES_PATH;
 
             ?>
-
-
 
             <ol class="breadcrumb">
                 <li>
