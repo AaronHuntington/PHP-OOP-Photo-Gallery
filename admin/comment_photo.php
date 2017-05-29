@@ -2,7 +2,11 @@
     include("includes/header.php"); 
     if(!$session->is_signed_in()){redirect("login.php");}
 
-    $comments = comment::find_all();
+    if(empty($_GET['id'])){
+        redirect("photos.php");
+    }
+
+    $comments = comment::find_the_comments($_GET['id']);
 ?>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <?php include("includes/top_nav.php"); ?>
@@ -13,7 +17,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    All Comments
+                    Comments
                 </h1>
                 <p class="bg-success"><?php echo $message; ?></p>
                 <div class="col-md-12">
@@ -31,7 +35,7 @@
                                     <td><?php echo $comment->id; ?></td>
                                     <td><?php echo $comment->author; ?>
                                         <div class="action_links">
-                                            <a href="delete_comment.php/?id=<?php echo $comment->id; ?>">
+                                            <a href="delete_comment_photo.php/?id=<?php echo $comment->id; ?>">
                                                 Delete
                                             </a> 
                                         </div>
