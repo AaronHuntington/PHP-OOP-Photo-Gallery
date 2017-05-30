@@ -9,7 +9,6 @@ if(isset($_POST['submit'])){
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
 
-
     // Method to check database user
     $user_found = user::verify_user($username, $password);
 

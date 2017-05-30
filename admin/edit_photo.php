@@ -66,6 +66,10 @@
                 
                     <div class="col-md-4" >
                         <div  class="photo-info-box">
+
+
+
+                            
                             <div class="info-box-header">
                                 <h4>Save <span id="toggle" class="glyphicon glyphicon-menu-up pull-right"></span></h4>
                             </div>

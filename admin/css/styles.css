@@ -70,3 +70,8 @@ padding: 7px 9px 19px;
 #modal_sidebar {
     position: fixed !important;
 }
+
+/****** Login Page ******/
+#login-id{
+    color: #fff !important;
+}

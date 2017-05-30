@@ -1,7 +1,7 @@
         </div>
         <!-- /#wrapper -->
 
-        <!-- jQuery -->
+        <!-- jQuery -->22
         <script src="js/jquery.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
@@ -9,6 +9,8 @@
 
         <!-- WYSIWYG -->
         <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+
+        <script src="js/dropzone.js" type="text/javascript"></script>
         <script src="js/scripts.js" type="text/javascript"></script>
         <script type="text/javascript">
             google.charts.load('current', {'packages':['corechart']});
